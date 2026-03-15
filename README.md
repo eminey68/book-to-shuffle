@@ -4,10 +4,13 @@
 
 A book discovery and social reading platform built with vanilla JavaScript and Google Books API.
 
+🌐 **Live Demo: [book-to-shuffle.vercel.app](https://book-to-shuffle.vercel.app)**
+
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-coming_soon-3776AB?style=flat&logo=python&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)
 
 ## ✨ Features
 
@@ -27,7 +30,7 @@ A book discovery and social reading platform built with vanilla JavaScript and G
 | API | Google Books API |
 | Backend *(coming soon)* | Python, Flask |
 | Database *(coming soon)* | SQLite → PostgreSQL |
-| Deploy *(coming soon)* | Vercel + Render |
+| Deploy | Vercel |
 
 ## 🚀 Getting Started
 
@@ -43,10 +46,6 @@ git clone https://github.com/eminey68/book-to-shuffle.git
 cd book-to-shuffle
 # Open index.html
 ```
-
-## 📸 Screenshots
-
-*Coming soon*
 
 ## 👩‍💻 Developer
 
