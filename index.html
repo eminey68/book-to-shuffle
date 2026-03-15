@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book to Shuffle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+                <img src="logo.svg" width="36" height="36" alt="logo" style="display:block;" />
+                <div>
+                    <h1>Book to Shuffle</h1>
+                    <p>Your next book is one shuffle away.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h2 class="hero-title">
+                What will you<br>
+                <span class="highlight">read next?</span>
+            </h2>
+            <p class="hero-sub">Search over 1 million books. Save your favorites. Share with friends.</p>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search by title, author or topic..."
+                    autocomplete="off"
+                />
+                <button id="searchBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 3h5v5"/>
+                        <path d="M4 20L21 3"/>
+                        <path d="M21 16v5h-5"/>
+                        <path d="M15 15l6 6"/>
+                        <path d="M4 4l5 5"/>
+                    </svg> 
+                </button>
+            </div>
+
+            <div class="quick-tags">
+                <span class="tag" onclick="quickSearch('fiction')">Fiction</span>
+                <span class="tag" onclick="quickSearch('science fiction')">Sci-Fi</span>
+                <span class="tag" onclick="quickSearch('history')">History</span>
+                <span class="tag" onclick="quickSearch('self help')">Self Help</span>
+                <span class="tag" onclick="quickSearch('philosophy')">Philosophy</span>
+                <span class="tag" onclick="quickSearch('mystery')">Mystery</span>
+            </div>
+        </section>
+
+        <section class="results-section">
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Shuffling books...</p>
+            </div>
+            <div id="resultInfo" class="result-info hidden"></div>
+            <div id="results" class="results-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Book to Shuffle · <span>Emine YENIL </span></p>
+    </footer>
+
+    <div id="modal" class="modal hidden">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
